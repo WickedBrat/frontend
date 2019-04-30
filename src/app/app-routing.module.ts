@@ -10,6 +10,7 @@ const routes: Routes = [
     { path: 'add', loadChildren: 'app/add/add.module#AddModule' },
     { path: 'view', loadChildren: 'app/view/view.module#ViewModule' },
     { path: 'user', loadChildren: 'app/profile/profile.module#ProfileModule' },
+    { path: 'how-it-works', loadChildren: 'app/how-it-works/how-it-works.module#HowItWorksModule' },
     { path: 'not-found', component: NotFoundComponent, data: { title: extract('Page not found! :(') } },
     { path: 'unauthorized', component: UnauthorisedComponent, data: { title: extract('Unauthorised Access') } }
   ]),

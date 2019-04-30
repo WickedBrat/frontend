@@ -1,0 +1,85 @@
+<mat-horizontal-stepper style="height:100%;">
+  <mat-step label="Step 1" state="phone">
+    <div class=""></div>
+    <div class="slider-button">
+      <button mat-icon-button matStepperNext><mat-icon>arrow_right</mat-icon></button>
+    </div>
+  </mat-step>
+  <mat-step label="Step 2" state="chat">
+    <div class="stepper-content">
+      <div class="slider-button">
+        <button mat-icon-button matStepperPrevious><mat-icon>arrow_left</mat-icon></button>
+      </div>
+      <div class="stepper-description-content"><img src="../../assets/add-idea.svg" /></div>
+      <div class="slider-button">
+        <button mat-icon-button matStepperNext><mat-icon>arrow_right</mat-icon></button>
+      </div>
+    </div>
+  </mat-step>
+  <mat-step label="Step 3" state="chat">
+    <div class="stepper-content">
+      <div class="slider-button">
+        <button mat-icon-button matStepperPrevious><mat-icon>arrow_left</mat-icon></button>
+      </div>
+      <div class=""></div>
+      <div class="slider-button">
+        <button mat-icon-button matStepperNext><mat-icon>arrow_right</mat-icon></button>
+      </div>
+    </div>
+  </mat-step>
+  <mat-step label="Step 4" state="chat">
+    <div class="stepper-content">
+      <div class="slider-button">
+        <button mat-icon-button matStepperPrevious><mat-icon>arrow_left</mat-icon></button>
+      </div>
+      <div class=""></div>
+      <div class="slider-button">
+        <button mat-icon-button matStepperNext><mat-icon>arrow_right</mat-icon></button>
+      </div>
+    </div>
+  </mat-step>
+  <mat-step label="Step 5" state="chat">
+    <div class="stepper-content">
+      <div class="slider-button">
+        <button mat-icon-button matStepperPrevious><mat-icon>arrow_left</mat-icon></button>
+      </div>
+      <div class=""></div>
+      <div class="slider-button">
+        <button mat-icon-button matStepperNext><mat-icon>arrow_right</mat-icon></button>
+      </div>
+    </div>
+  </mat-step>
+  <mat-step label="Step 6" state="chat">
+    <div class="stepper-content">
+      <div class="slider-button">
+        <button mat-icon-button matStepperPrevious><mat-icon>arrow_left</mat-icon></button>
+      </div>
+      <div class=""></div>
+      <div class="slider-button">
+        <button mat-icon-button matStepperNext><mat-icon>arrow_right</mat-icon></button>
+      </div>
+    </div>
+  </mat-step>
+  <mat-step label="Step 7">
+    <div class=""></div>
+  </mat-step>
+
+  <!-- Icon overrides. -->
+  <ng-template matStepperIcon="phone">
+    <mat-icon>call_end</mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="chat">
+    <mat-icon>forum</mat-icon>
+  </ng-template>
+</mat-horizontal-stepper>
+
+<style>
+  .stepper-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .stepper-description-content {
+    width: 70%;
+  }
+</style>

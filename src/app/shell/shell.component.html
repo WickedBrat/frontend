@@ -3,6 +3,9 @@
     <mat-sidenav #sidenav mode="over" ngClass.gt-sm="has-border">
       <nav>
         <mat-list>
+          <a mat-list-item routerLink="/" routerLinkActive="active" (click)="sidenav.close()">
+            <span>Home</span>
+          </a>
           <a mat-list-item routerLink="/add/project" routerLinkActive="active" (click)="sidenav.close()">
             <span>Add Project</span>
           </a>
